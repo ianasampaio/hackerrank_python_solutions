@@ -1,0 +1,11 @@
+n = int(input())
+a = set(map(int, input().split()))
+
+m = int(input())
+b = set(map(int, input().split()))
+
+list = list(a ^ b)
+list.sort()
+
+for k in list:
+    print(k)
